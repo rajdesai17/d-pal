@@ -1,0 +1,62 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+follow [implimentation.pdf](mdc:context/implimentation.pdf) and [overview.pdf](mdc:context/overview.pdf) if any doubts
+1. Project Structure and Setup
+React + Vite: Initialize the app using Vite for fast development. Organize components (e.g., Navbar, NoteEditor, CommandPalette) into separate folders for modularity.
+
+Acernity UI: Integrate Acernity UI for UI components like buttons, inputs, and modals for the command palette and theme toggle.
+
+Tailwind CSS: Use Tailwind CSS for styling. Configure for both light and dark modes with custom themes in tailwind.config.js.
+
+2. Core Features
+Minimal Background: Ensure a simple background with a pure white (light mode) or dark gray (dark mode) color. Avoid gradients or unnecessary design elements.
+
+Typography: Use system fonts or Google Fonts like Inter or IBM Plex Sans for clarity. Set proper line-height and spacing for readability.
+
+Writing Focus Mode: Dim the text except for the active line/paragraph. The text should fade out and in smoothly as the user types.
+
+Floating Navbar: Implement a minimal, sticky navbar with icons for the theme toggle, opening the command palette, and other essential actions.
+
+LocalStorage Saving: Automatically save the note to localStorage as the user types, ensuring persistence across sessions without needing a save button.
+
+Command Palette: Implement a quick-access command palette (Cmd/Ctrl + K) for actions like creating a new note, toggling the theme, and downloading notes.
+
+3. UI Design with Acernity UI
+Use Acernity UI components for UI elements to maintain consistency across the application.
+
+The navbar should be sticky and minimal, showing only essential icons (e.g., theme toggle, command palette).
+
+Utilize Acernity UI’s Modal or a similar lightweight solution for the command palette.
+
+Tailwind CSS should be used for custom layouts, typography, and color management.
+
+4. Code Quality and Documentation
+Modular Code: Break down the app into reusable, small components (e.g., Navbar, NoteEditor, CommandPalette).
+
+Commenting: Provide clear comments for complex functions like saving data to localStorage and managing focus mode.
+
+Testing: Write tests for core features like theme toggling, focus mode, and localStorage functionality.
+
+Documentation should include:
+
+Setup and installation instructions.
+
+Feature list with user stories and expected behaviors.
+
+GitHub repository for version control and collaboration.
+
+5. Deployment and Version Control
+Deployment: Deploy the app to platforms like Vercel or Netlify for seamless hosting.
+
+Version Control: Use GitHub for managing the codebase. Regularly push updates and document changes through clear commit messages.
+
+Documentation Links:
+Acernity UI Documentation
+
+React Documentation
+
+
+Tailwind CSS Documentation
