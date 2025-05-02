@@ -99,8 +99,8 @@ function App() {
         <div className={`min-h-screen transition-colors duration-200 ${darkMode ? 'dark bg-dark-bg text-dark-text' : 'bg-light-bg text-light-text'}`}
         >
           <Navbar />
-          <div className="container mx-auto px-4 pt-24 pb-8">
-            <div className="max-w-3xl mx-auto">
+          <div className="container mx-auto px-2 pt-15 pb-2 mt-10 border border-white dark:border-white rounded-lg">
+            <div className="max-w-5xl mx-auto">
               <NoteEditor
                 ref={noteEditorRef}
                 segments={segments}
